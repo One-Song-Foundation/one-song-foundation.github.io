@@ -10,8 +10,9 @@ export default function Navigation() {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
-            One Song Foundation
+          <Link href="/" className="flex items-center text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
+            <img src="/logo.png" alt="One Song Foundation Logo" className="h-10 w-auto mr-3" />
+            <span>One Song Foundation</span>
           </Link>
           
           {/* Desktop Navigation */}
