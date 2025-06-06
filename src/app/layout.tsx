@@ -8,7 +8,19 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'One Song Foundation - From Despair to Song',
-  description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
+  description: 'From Despair to Song',
+  openGraph: {
+    title: 'One Song Foundation - From Despair to Song',
+    description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
+    images: [
+      {
+        url: '/logo.png',
+        width: 512,
+        height: 512,
+        alt: 'One Song Foundation Logo',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
