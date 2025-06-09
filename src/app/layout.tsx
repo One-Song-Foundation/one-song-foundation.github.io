@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'One Song Foundation - From Despair to Song',
-  description: 'From Despair to Song',
+  description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
   openGraph: {
     title: 'One Song Foundation - From Despair to Song',
     description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
