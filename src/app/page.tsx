@@ -101,7 +101,8 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Our Philosophy</h2>
             <p className="text-xl text-gray-700 mb-12 leading-relaxed">
-              The name of our foundation comes from the ancient idea of the "one song" —a unifying thread of love and truth that lives beneath all things. Recovery is not just about surviving–it's about remembering this deeper melody, buried beneath trauma, addiction, and despair. For those walking the path of recovery, hearing that song again can mean the difference between life and death.
+              <strong>The name of our foundation comes from the ancient idea of the "one song" — a unifying thread of love and truth that lives beneath all things.</strong><br />
+              Recovery is not just about surviving–it's about remembering this deeper melody, buried beneath trauma, addiction, and despair. For those walking the path of recovery, hearing that song again can mean the difference between life and death.
             </p>
             <div className="bg-blue-50 p-8 rounded-2xl">
               <h3 className="text-2xl font-semibold mb-6 text-gray-900">We believe recovery is a sacred journey:</h3>
