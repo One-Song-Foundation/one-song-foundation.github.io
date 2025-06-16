@@ -124,6 +124,30 @@ export default function Home() {
             <p className="text-xl text-gray-700 mt-12 leading-relaxed">
               By helping individuals find their way back to this song, we help them reclaim their lives and in doing so, we all heal.
             </p>
+            <div className="bg-blue-50 p-8 rounded-2xl mt-12">
+              <h3 className="text-2xl font-semibold mb-6 text-gray-900">When one person reconnects with their true self:</h3>
+              <ul className="space-y-4 text-gray-700 text-lg">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  Families begin to breathe easier
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  Children feel safer
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  Generational cycles can shift
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  Communities begin to change
+                </li>
+              </ul>
+            </div>
+            <p className="text-xl text-gray-700 mt-8 leading-relaxed">
+              Recovery is never just personal--it's collective. Your support helps restore the song not just in one soul, but in the many lives they touch.
+            </p>
           </div>
         </div>
       </section>
