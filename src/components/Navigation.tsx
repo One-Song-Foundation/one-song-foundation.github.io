@@ -17,18 +17,21 @@ export default function Navigation() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/about" className="text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              About
+            <Link href="/" className="text-gray-600 hover:text-blue-600 transition-colors font-medium px-6 py-2 rounded-full">
+              Home
             </Link>
-            <Link href="/programs" className="text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              Programs
+            <Link href="/team" className="text-gray-600 hover:text-blue-600 transition-colors font-medium px-6 py-2 rounded-full">
+              Team
             </Link>
-            <Link href="/stories" className="text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              Stories
-            </Link>
-            <Link href="/donate" className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors font-medium">
-              Donate
-            </Link>
+            {/* Custom tooltip wrapper for Donate button */}
+            <div className="relative group">
+              <button disabled className="bg-blue-300 text-white px-6 py-2 rounded-full font-medium opacity-60 cursor-not-allowed">
+                Donate
+              </button>
+              <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 bg-gray-900 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
+                pending 501c
+              </span>
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -45,18 +48,21 @@ export default function Navigation() {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 space-y-4">
-            <Link href="/about" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              About
+            <Link href="/" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
+              Home
             </Link>
-            <Link href="/programs" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              Programs
+            <Link href="/team" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
+              Team
             </Link>
-            <Link href="/stories" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              Stories
-            </Link>
-            <Link href="/donate" className="block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors font-medium text-center">
-              Donate
-            </Link>
+            {/* Custom tooltip wrapper for Donate button (mobile) */}
+            <div className="relative group w-full">
+              <button disabled className="block bg-blue-300 text-white px-6 py-2 rounded-full font-medium text-center opacity-60 cursor-not-allowed w-full">
+                Donate
+              </button>
+              <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 bg-gray-900 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
+                pending 501c
+              </span>
+            </div>
           </div>
         )}
       </div>

@@ -14,26 +14,21 @@ export default function Footer() {
           
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul className="flex flex-col space-y-2 w-full">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
-                  About Us
+                <Link href="/" className="block w-full text-left text-gray-400 hover:text-white transition-colors px-2 py-1 rounded">
+                  Home
                 </Link>
               </li>
               <li>
-                <Link href="/programs" className="text-gray-400 hover:text-white transition-colors">
-                  Our Programs
+                <Link href="/team" className="block w-full text-left text-gray-400 hover:text-white transition-colors px-2 py-1 rounded">
+                  Team
                 </Link>
               </li>
               <li>
-                <Link href="/stories" className="text-gray-400 hover:text-white transition-colors">
-                  Success Stories
-                </Link>
-              </li>
-              <li>
-                <Link href="/donate" className="text-gray-400 hover:text-white transition-colors">
+                <span title="pending 501c" className="block w-full text-left cursor-not-allowed text-gray-500 px-2 py-1 rounded opacity-60">
                   Donate
-                </Link>
+                </span>
               </li>
             </ul>
           </div>
