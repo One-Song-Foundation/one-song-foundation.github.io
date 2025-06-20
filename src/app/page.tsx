@@ -27,7 +27,7 @@ export default function Home() {
                 </span>
               </div>
               <Link 
-                href="/learn-more" 
+                href="/team" 
                 className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors text-lg"
               >
                 Learn More
@@ -175,7 +175,7 @@ export default function Home() {
                 </span>
               </div>
               <Link 
-                href="/learn-more" 
+                href="/team" 
                 className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors text-lg"
               >
                 Learn More
