@@ -36,10 +36,9 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>Email: info@onesongfoundation.org</li>
-              <li>Phone: (555) 123-4567</li>
-              <li>Address: 123 Recovery Way</li>
-              <li>City, State 12345</li>
+              <li>Email: <a href="mailto:onesongfoundation.org@domainsbyproxy.com" className="underline hover:text-white">onesongfoundation.org@domainsbyproxy.com</a></li>
+              <li>Phone: (831) 824-4835</li>
+              <li>Founded in California</li>
             </ul>
           </div>
         </div>
