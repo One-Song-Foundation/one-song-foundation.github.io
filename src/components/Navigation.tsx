@@ -16,20 +16,20 @@ export default function Navigation() {
           </Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-4">
-            <Link href="/" className="text-gray-600 hover:text-blue-600 transition-colors font-medium px-6 py-2 rounded-full">
+          <div className="hidden md:flex space-x-2">
+            <Link href="/" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
               Home
             </Link>
-            <Link href="/team" className="text-gray-600 hover:text-blue-600 transition-colors font-medium px-6 py-2 rounded-full">
+            <Link href="/team" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
               Team
             </Link>
             {/* Custom tooltip wrapper for Donate button */}
             <div className="relative group">
-              <button disabled className="bg-blue-300 text-white px-6 py-2 rounded-full font-medium opacity-60 cursor-not-allowed">
+              <button disabled className="text-blue-600 font-bold px-6 py-2 rounded-full transition-colors opacity-60 cursor-not-allowed group-hover:bg-blue-300 group-hover:text-white">
                 Donate
               </button>
               <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 bg-gray-900 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
-                pending 501c
+                Pending 501c status
               </span>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function Navigation() {
                 Donate
               </button>
               <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 bg-gray-900 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
-                pending 501c
+                Pending 501c status
               </span>
             </div>
           </div>

@@ -26,7 +26,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <span title="pending 501c" className="block w-full text-left cursor-not-allowed text-gray-500 px-2 py-1 rounded opacity-60">
+                <span title="Pending 501c status" className="block w-full text-left cursor-not-allowed text-gray-500 px-2 py-1 rounded opacity-60">
                   Donate
                 </span>
               </li>
