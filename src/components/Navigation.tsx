@@ -16,7 +16,7 @@ export default function Navigation() {
           </Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-4">
             <Link href="/" className="text-gray-600 hover:text-blue-600 transition-colors font-medium px-6 py-2 rounded-full">
               Home
             </Link>
