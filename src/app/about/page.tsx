@@ -23,7 +23,7 @@ export default function About() {
             </div>
             {/* New Section: What Sets Us Apart */}
             <div className="bg-white p-10 rounded-2xl shadow-md mt-16">
-              <h3 className="text-3xl md:text-4xl font-bold mb-10 text-gray-900 text-center">Exceptional Treatment</h3>
+              <h3 className="text-3xl md:text-4xl font-bold mb-10 text-gray-900 text-center">Qualities of Exceptional Treatment</h3>
               <div className="flex flex-col md:flex-row justify-center gap-10">
                 {/* Column 1 */}
                 <div className="flex-1 max-w-xs mx-auto">

@@ -42,7 +42,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
               <li>Email: <a href="mailto:onesongfoundation.org@domainsbyproxy.com" className="underline hover:text-white">onesongfoundation.org@domainsbyproxy.com</a></li>
-              <li>Phone: (831) 824-4835</li>
+              <li>Phone: (408) 320-9319</li>
               <li>Founded in California</li>
             </ul>
           </div>
