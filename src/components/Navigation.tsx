@@ -20,6 +20,9 @@ export default function Navigation() {
             <Link href="/" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
               Home
             </Link>
+            <Link href="/about" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
+              About
+            </Link>
             <Link href="/team" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
               Team
             </Link>
@@ -50,6 +53,9 @@ export default function Navigation() {
           <div className="md:hidden py-4 space-y-4">
             <Link href="/" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
               Home
+            </Link>
+            <Link href="/about" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
+              About
             </Link>
             <Link href="/team" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
               Team

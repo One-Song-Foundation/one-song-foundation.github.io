@@ -21,6 +21,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/about" className="block w-full text-left text-gray-400 hover:text-white transition-colors px-2 py-1 rounded">
+                  About
+                </Link>
+              </li>
+              <li>
                 <Link href="/team" className="block w-full text-left text-gray-400 hover:text-white transition-colors px-2 py-1 rounded">
                   Team
                 </Link>
