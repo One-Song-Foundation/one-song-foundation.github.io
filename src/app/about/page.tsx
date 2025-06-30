@@ -15,14 +15,14 @@ export default function About() {
               <h3 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">How We Help</h3>
               <p className="text-xl text-gray-700 leading-relaxed">
               </p>
-              <ul className="text-xl text-gray-700 leading-relaxed list-disc list-inside mt-8 space-y-3 text-left max-w-2xl mx-auto">
+              <ul className="text-xl text-gray-700 leading-relaxed list-disc list-inside mt-8 space-y-3 text-center max-w-2xl mx-auto">
                 <li>Bridges financial gap</li>
                 <li>Grants longer more impactful stays</li>
                 <li>Promotes excellence in treatment</li>
               </ul>
             </div>
             {/* New Section: What Sets Us Apart */}
-            <div className="bg-yellow-50 p-10 rounded-2xl shadow-md mt-16">
+            <div className="bg-white p-10 rounded-2xl shadow-md mt-16">
               <h3 className="text-3xl md:text-4xl font-bold mb-10 text-gray-900 text-center">Exceptional Treatment</h3>
               <div className="flex flex-col md:flex-row justify-center gap-10">
                 {/* Column 1 */}
