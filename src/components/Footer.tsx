@@ -31,6 +31,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/partners" className="block w-full text-left text-gray-400 hover:text-white transition-colors px-2 py-1 rounded">
+                  Partners
+                </Link>
+              </li>
+              <li>
                 <span title="Pending 501c status" className="block w-full text-left cursor-not-allowed text-gray-500 px-2 py-1 rounded opacity-60">
                   Donate
                 </span>

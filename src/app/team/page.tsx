@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { FaLinkedin } from 'react-icons/fa';
 
 export default function Bio() {
   return (
@@ -22,6 +23,10 @@ export default function Bio() {
         <p className="text-lg text-gray-700 text-center mb-2">
           He founded the One Song Foundation so that everyone — regardless of background, status, or resources — could have equal access to excellent care. With a background in blockchain and fintech, and a deep personal commitment to recovery, Chris is building bridges between ancient wisdom and modern tools to help others rediscover their rhythm — their one song.
         </p>
+        <a href="https://www.linkedin.com/in/cchen408/" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center gap-2 text-blue-700 hover:text-blue-900 transition-colors">
+          <FaLinkedin className="text-2xl" />
+          <span className="text-lg">LinkedIn</span>
+        </a>
       </div>
       <div className="max-w-2xl w-full bg-blue-50 rounded-2xl shadow-md p-8 flex flex-col items-center">
         <Image
@@ -36,6 +41,10 @@ export default function Bio() {
         <p className="text-lg text-gray-700 text-center mb-2">
           Carl is a valued member of the One Song Foundation team. His commitment to service and his compassionate spirit help drive the mission forward every day.
         </p>
+        <a href="https://www.linkedin.com/in/carlgish/" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center gap-2 text-blue-700 hover:text-blue-900 transition-colors">
+          <FaLinkedin className="text-2xl" />
+          <span className="text-lg">LinkedIn</span>
+        </a>
       </div>
     </main>
   );

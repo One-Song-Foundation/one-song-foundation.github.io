@@ -26,6 +26,9 @@ export default function Navigation() {
             <Link href="/team" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
               Team
             </Link>
+            <Link href="/partners" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
+              Partners
+            </Link>
             {/* Custom tooltip wrapper for Donate button */}
             <div className="relative group">
               <button disabled className="text-blue-600 font-bold px-6 py-2 rounded-full transition-colors opacity-60 cursor-not-allowed group-hover:bg-blue-300 group-hover:text-white">
@@ -59,6 +62,9 @@ export default function Navigation() {
             </Link>
             <Link href="/team" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
               Team
+            </Link>
+            <Link href="/partners" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
+              Partnerships
             </Link>
             {/* Custom tooltip wrapper for Donate button (mobile) */}
             <div className="relative group w-full">
