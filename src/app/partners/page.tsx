@@ -12,8 +12,11 @@ export default function Partners() {
             </p>
             <div className="bg-white p-10 rounded-2xl shadow-md mt-16">
               <h3 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Become a Partner</h3>
-              <p className="text-xl text-gray-700 leading-relaxed mb-2">
-                We want to gift scholarships and grants to clients for treatment centers that provide excellent care.
+              <p className="text-xl text-gray-700 leading-relaxed mb-4">
+                At One Song, we are always looking to partner with treatment centers providing excellent care. If you believe you are offering exceptional mental health or addiction treatment services, we would love to meet you and learn more about what you do.
+              </p>
+              <p className="text-xl text-gray-700 leading-relaxed mb-4">
+                We understand that excellent care is not cheap, and many clients may not have the financial means to afford it. That's what we hope to address at One Song. By providing scholarships or grants, we can help more clients access transformative treatment and increase the effectiveness of their care.
               </p>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
                 Please reach out to <a href="/team" className="text-blue-700 hover:underline">Chris</a> or <a href="/team" className="text-blue-700 hover:underline">Carl</a> if you are interested in partnerships.
@@ -29,9 +32,7 @@ export default function Partners() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">Our Partners</h2>
             <ul className="space-y-6">
               <li className="bg-blue-50 rounded-xl p-6 shadow flex flex-col items-center">
-                <a href="https://www.embodiedrecovery.com/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-                  <img src="/embodiedrecovery.svg" alt="Embodied Recovery Logo" className="mb-4 h-16 w-auto" />
-                </a>
+                <span className="mb-4 h-20 flex items-center justify-center text-3xl font-extrabold text-blue-600 animate-pulse">🚀 Coming Soon! 🚀</span>
               </li>
             </ul>
           </div>
