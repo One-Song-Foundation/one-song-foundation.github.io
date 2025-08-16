@@ -9,9 +9,24 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'One Song Foundation - From Despair to Song',
   description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
+  keywords: 'mental health, addiction treatment, recovery, financial support, treatment center, mental health foundation',
+  authors: [{ name: 'One Song Foundation' }],
+  creator: 'One Song Foundation',
+  publisher: 'One Song Foundation',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://onesongfoundation.org'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'One Song Foundation - From Despair to Song',
     description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
+    url: 'https://onesongfoundation.org',
+    siteName: 'One Song Foundation',
     images: [
       {
         url: '/logo.png',
@@ -20,6 +35,28 @@ export const metadata: Metadata = {
         alt: 'One Song Foundation Logo',
       },
     ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'One Song Foundation - From Despair to Song',
+    description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
+    images: ['/logo.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code', // You'll need to add your actual Google verification code
   },
 }
 
