@@ -29,15 +29,9 @@ export default function Navigation() {
             <Link href="/partners" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
               Partners
             </Link>
-            {/* Custom tooltip wrapper for Donate button */}
-            <div className="relative group">
-              <button disabled className="text-blue-600 font-bold px-6 py-2 rounded-full transition-colors opacity-60 cursor-not-allowed group-hover:bg-blue-300 group-hover:text-white">
-                Donate
-              </button>
-              <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 bg-gray-900 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
-                Pending 501c status
-              </span>
-            </div>
+            <button className="bg-blue-600 text-white font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-700">
+              Donate
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -66,15 +60,9 @@ export default function Navigation() {
             <Link href="/partners" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
               Partnerships
             </Link>
-            {/* Custom tooltip wrapper for Donate button (mobile) */}
-            <div className="relative group w-full">
-              <button disabled className="block bg-blue-300 text-white px-6 py-2 rounded-full font-medium text-center opacity-60 cursor-not-allowed w-full">
-                Donate
-              </button>
-              <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 bg-gray-900 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
-                Pending 501c status
-              </span>
-            </div>
+            <button className="block bg-blue-600 text-white px-6 py-2 rounded-full font-medium text-center hover:bg-blue-700 transition-colors w-full">
+              Donate
+            </button>
           </div>
         )}
       </div>

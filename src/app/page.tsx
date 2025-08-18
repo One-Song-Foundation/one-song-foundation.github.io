@@ -18,14 +18,9 @@ export default function Home() {
               We believe that every person deserves access to effective, transformative treatment for mental health and addiction. Yet for too many, financial barriers and insurance limitations block the road to recovery. Our nonprofit public charity bridges this gap offering financial support for treatment that saves lives, restores dignity, and empowers lasting change.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <div className="relative group inline-block">
-                <button disabled className="bg-blue-300 text-white px-8 py-4 rounded-full font-semibold text-lg opacity-60 cursor-not-allowed">
-                  Donate Now
-                </button>
-                <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 bg-gray-900 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
-                  Pending 501c status
-                </span>
-              </div>
+              <button className="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors">
+                Donate Now
+              </button>
               <Link 
                 href="/team" 
                 className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors text-lg"
@@ -166,14 +161,9 @@ export default function Home() {
               Join us in the movement to break barriers and bring healing where it's needed most.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <div className="relative group inline-block">
-                <button disabled className="bg-blue-300 text-white px-8 py-4 rounded-full font-semibold text-lg opacity-60 cursor-not-allowed">
-                  Donate Now
-                </button>
-                <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 bg-gray-900 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
-                  Pending 501c status
-                </span>
-              </div>
+              <button className="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors">
+                Donate Now
+              </button>
               <Link 
                 href="/team" 
                 className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors text-lg"
