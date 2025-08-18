@@ -19,7 +19,9 @@ export default function Partners() {
                 We understand that excellent care is not cheap, and many clients may not have the financial means to afford it. That's what we hope to address at One Song. By providing scholarships or grants, we can help more clients access transformative treatment and increase the effectiveness of their care.
               </p>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Please reach out to <a href="/team" className="text-blue-700 hover:underline">Chris</a> or <a href="/team" className="text-blue-700 hover:underline">Carl</a> if you are interested in partnerships.
+                For partnership inquiries, please email
+                {' '}
+                <a href="mailto:partnerships@onesongfoundation.org?subject=Partnership%20Inquiry" className="text-blue-700 hover:underline">partnerships@onesongfoundation.org</a>.
               </p>
             </div>
           </div>
