@@ -18,9 +18,9 @@ export default function Home() {
               We believe that every person deserves access to effective, transformative treatment for mental health and addiction. Yet for too many, financial barriers and insurance limitations block the road to recovery. Our nonprofit public charity bridges this gap offering financial support for treatment that saves lives, restores dignity, and empowers lasting change.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors">
+              <a href="https://www.paypal.com/fundraiser/charity/5615963" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors">
                 Donate Now
-              </button>
+              </a>
               <Link 
                 href="/team" 
                 className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors text-lg"
@@ -161,9 +161,9 @@ export default function Home() {
               Join us in the movement to break barriers and bring healing where it's needed most.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors">
+              <a href="https://www.paypal.com/fundraiser/charity/5615963" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors">
                 Donate Now
-              </button>
+              </a>
               <Link 
                 href="/team" 
                 className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors text-lg"

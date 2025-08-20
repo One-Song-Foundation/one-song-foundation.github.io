@@ -36,9 +36,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <button className="block w-full text-left text-gray-400 hover:text-white transition-colors px-2 py-1 rounded">
+                <a href="https://www.paypal.com/fundraiser/charity/5615963" target="_blank" rel="noopener noreferrer" className="block w-full text-left text-gray-400 hover:text-white transition-colors px-2 py-1 rounded">
                   Donate
-                </button>
+                </a>
               </li>
             </ul>
           </div>

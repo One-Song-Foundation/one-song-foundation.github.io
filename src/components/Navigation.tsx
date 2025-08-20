@@ -29,9 +29,9 @@ export default function Navigation() {
             <Link href="/partners" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
               Partners
             </Link>
-            <button className="bg-blue-600 text-white font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-700">
+            <a href="https://www.paypal.com/fundraiser/charity/5615963" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 text-white font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-700">
               Donate
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -60,9 +60,9 @@ export default function Navigation() {
             <Link href="/partners" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
               Partnerships
             </Link>
-            <button className="block bg-blue-600 text-white px-6 py-2 rounded-full font-medium text-center hover:bg-blue-700 transition-colors w-full">
+            <a href="https://www.paypal.com/fundraiser/charity/5615963" target="_blank" rel="noopener noreferrer" className="block bg-blue-600 text-white px-6 py-2 rounded-full font-medium text-center hover:bg-blue-700 transition-colors w-full">
               Donate
-            </button>
+            </a>
           </div>
         )}
       </div>
