@@ -30,10 +30,11 @@ export default function About() {
                   <div className="flex justify-center mb-4">
                     <span role="img" aria-label="lightbulb" className="text-4xl">💡</span>
                   </div>
-                  <h4 className="text-xl font-semibold mb-3 text-gray-900 text-center">Innovative & curated curriculum</h4>
+                  <h4 className="text-xl font-semibold mb-3 text-gray-900 text-center">Innovative & Curated Curriculum</h4>
                   <ul className="list-disc list-inside text-gray-700 space-y-2 text-left">
-                    <li>blends psychological and somatic wisdom</li>
-                    <li>clients experience a felt shift in their experience of life</li>
+                    <li>Blends psychological and somatic wisdom</li>
+                    <li>Clients achieve lasting change and a felt shift in their experience of life</li>
+                    <li>Provides a strong post graudation program</li>
                   </ul>
                 </div>
                 {/* Column 2 */}
@@ -41,11 +42,11 @@ export default function About() {
                   <div className="flex justify-center mb-4">
                     <span role="img" aria-label="conversation" className="text-4xl">🗣️</span>
                   </div>
-                  <h4 className="text-xl font-semibold mb-3 text-gray-900 text-center">High-touch, intimate and meaningful care</h4>
+                  <h4 className="text-xl font-semibold mb-3 text-gray-900 text-center">High-touch, Intimate and Meaningful Care</h4>
                   <ul className="list-disc list-inside text-gray-700 space-y-2 text-left">
-                    <li>clients don't get lost in the shuffle</li>
-                    <li>group sizes are intentionally small, 6 to 8 clients maximum</li>
-                    <li>dual facilitation in each group</li>
+                    <li>Group sizes are intentionally small, 6 to 8 clients maximum</li>
+                    <li>Dual facilitation in each group (3-4 clients per clinician)</li>
+                    <li>Clients don't get lost in the shuffle</li>
                   </ul>
                 </div>
                 {/* Column 3 */}
@@ -55,8 +56,9 @@ export default function About() {
                   </div>
                   <h4 className="text-xl font-semibold mb-3 text-gray-900 text-center">Deeply Rooted Staff Culture</h4>
                   <ul className="list-disc list-inside text-gray-700 space-y-2 text-left">
-                    <li>Daily practice, ongoing workshops & meaningful recovery commitments</li>
+                    <li>Lives their recovery, have experienced the change that they want to help others achieve</li>
                     <li>They embody presence, integrity, and authentic recovery</li>
+                    <li>They are committed to the mission of the organization and a living example</li>
                   </ul>
                 </div>
               </div>
@@ -66,4 +68,4 @@ export default function About() {
       </section>
     </main>
   );
-} 
+}   
