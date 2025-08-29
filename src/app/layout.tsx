@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'One Song Foundation - From Despair to Song',
+  title: 'One Song Foundation - Supporting the Journey Back to Self Love',
   description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
   keywords: 'mental health, addiction treatment, recovery, financial support, treatment center, mental health foundation',
   authors: [{ name: 'One Song Foundation' }],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'One Song Foundation - From Despair to Song',
+    title: 'One Song Foundation - Supporting the Journey Back to Self Love',
     description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
     url: 'https://onesongfoundation.org',
     siteName: 'One Song Foundation',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'One Song Foundation - From Despair to Song',
+    title: 'One Song Foundation - Supporting the Journey Back to Self Love',
     description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
     images: ['/logo.png'],
   },
