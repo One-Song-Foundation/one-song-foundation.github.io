@@ -2,9 +2,11 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import DonationModal from './DonationModal'
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isDonationModalOpen, setIsDonationModalOpen] = useState(false)
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -29,9 +31,12 @@ export default function Navigation() {
             <Link href="/partners" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
               Partners
             </Link>
-            <a href="https://www.paypal.com/fundraiser/charity/5615963" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 text-white font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-700">
+            <button 
+              onClick={() => setIsDonationModalOpen(true)}
+              className="bg-blue-600 text-white font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-700"
+            >
               Donate
-            </a>
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -60,12 +65,21 @@ export default function Navigation() {
             <Link href="/partners" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
               Partnerships
             </Link>
-            <a href="https://www.paypal.com/fundraiser/charity/5615963" target="_blank" rel="noopener noreferrer" className="block bg-blue-600 text-white px-6 py-2 rounded-full font-medium text-center hover:bg-blue-700 transition-colors w-full">
+            <button 
+              onClick={() => setIsDonationModalOpen(true)}
+              className="block bg-blue-600 text-white px-6 py-2 rounded-full font-medium text-center hover:bg-blue-700 transition-colors w-full"
+            >
               Donate
-            </a>
+            </button>
           </div>
         )}
       </div>
+      
+      {/* Donation Modal */}
+      <DonationModal 
+        isOpen={isDonationModalOpen} 
+        onClose={() => setIsDonationModalOpen(false)} 
+      />
     </nav>
   )
 } 
