@@ -46,12 +46,21 @@ export default function DonationModal({ isOpen, onClose }: DonationModalProps) {
           {zoomSrc ? (
             <div className="flex flex-col items-center">
               <img src={zoomSrc} alt="Donation QR" className="w-full max-w-md sm:max-w-lg md:max-w-xl h-auto rounded-lg shadow" />
-              <button
-                onClick={() => setZoomSrc(null)}
-                className="mt-4 px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50"
-              >
-                Back
-              </button>
+              <div className="mt-4 flex items-center gap-3">
+                <button
+                  onClick={() => setZoomSrc(null)}
+                  className="px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50"
+                >
+                  Back
+                </button>
+                <a
+                  href={zoomSrc || '#'}
+                  download
+                  className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700"
+                >
+                  Download
+                </a>
+              </div>
             </div>
           ) : (
             <>
