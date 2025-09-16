@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { FaTimes, FaHeart } from 'react-icons/fa'
+import { FaPaypal, FaTimes, FaHeart } from 'react-icons/fa'
 
 // PayPal global type declaration
 // declare global {
@@ -76,36 +76,49 @@ export default function DonationModal({ isOpen, onClose }: DonationModalProps) {
                   <img 
                     src="/paypal.png" 
                     alt="PayPal QR Code" 
-                    className="w-56 h-56 object-contain rounded-lg shadow cursor-pointer" 
+                    className="w-56 h-56 object-contain rounded-lg shadow cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-lg hover:ring-2 hover:ring-blue-200" 
                     onClick={() => setZoomSrc('/paypal.png')} 
                   />
                   <button
                     onClick={() => setZoomSrc('/paypal.png')}
-                    className="mt-3 text-sm font-medium text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-300 rounded"
+                    className="mt-3 inline-flex items-center justify-center px-3 py-1.5 text-sm font-medium text-blue-700 border border-blue-200 rounded-md hover:bg-blue-50 hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300"
                   >
-                    PayPal
+                    Donate via PayPal
                   </button>
                 </div>
                 <div className="flex flex-col items-center">
                   <img 
                     src="/venmo.png" 
                     alt="Venmo QR Code" 
-                    className="w-56 h-56 object-contain rounded-lg shadow cursor-pointer" 
+                    className="w-56 h-56 object-contain rounded-lg shadow cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-lg hover:ring-2 hover:ring-blue-200" 
                     onClick={() => setZoomSrc('/venmo.png')} 
                   />
                   <button
                     onClick={() => setZoomSrc('/venmo.png')}
-                    className="mt-3 text-sm font-medium text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-300 rounded"
+                    className="mt-3 inline-flex items-center justify-center px-3 py-1.5 text-sm font-medium text-blue-700 border border-blue-200 rounded-md hover:bg-blue-50 hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300"
                   >
-                    Venmo
+                    Donate via Venmo
                   </button>
                 </div>
+              </div>
+
+              {/* PayPal Giving Fund Button */}
+              <div className="mb-6">
+                <a 
+                  href="https://www.paypal.com/fundraiser/charity/5615963" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-full py-3 px-6 rounded-lg font-semibold text-sm border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors inline-flex items-center justify-center gap-2"
+                >
+                  <FaPaypal className="text-base text-blue-600" />
+                  <span>Donate via PayPal Giving Fund</span>
+                </a>
               </div>
 
               {/* Tax Information */}
               <p className="text-xs text-gray-500 mt-6 text-center">
                 One Song Foundation is a 501(c)(3) nonprofit organization. 
-                Your donation may be tax-deductible.
+                All donations will be tax-deductible.
               </p>
             </>
           )}
