@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { FaTimes, FaHeart } from 'react-icons/fa'
 
 // PayPal global type declaration
@@ -19,12 +20,13 @@ interface DonationModalProps {
 }
 
 export default function DonationModal({ isOpen, onClose }: DonationModalProps) {
+  const [zoomSrc, setZoomSrc] = useState<string | null>(null)
 
   if (!isOpen) return null
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+      <div className="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-gray-200">
           <div className="flex items-center gap-3">
@@ -41,29 +43,63 @@ export default function DonationModal({ isOpen, onClose }: DonationModalProps) {
 
         {/* Content */}
         <div className="p-6">
-          {/* Mission Statement */}
-          <p className="text-gray-700 mb-8 text-center text-lg">
-            Your donation helps provide financial support for mental health and addiction treatment, 
-            creating pathways to healing for those in need.
-          </p>
-
-          {/* Donation Buttons */}
-          <div className="mb-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {zoomSrc ? (
             <div className="flex flex-col items-center">
-              <img src="/paypal.png" alt="PayPal QR Code" className="w-56 h-56 object-contain rounded-lg shadow" />
-              <span className="mt-3 text-sm font-medium text-gray-700">PayPal</span>
+              <img src={zoomSrc} alt="Donation QR" className="w-full max-w-md sm:max-w-lg md:max-w-xl h-auto rounded-lg shadow" />
+              <button
+                onClick={() => setZoomSrc(null)}
+                className="mt-4 px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50"
+              >
+                Back
+              </button>
             </div>
-            <div className="flex flex-col items-center">
-              <img src="/venmo.png" alt="Venmo QR Code" className="w-56 h-56 object-contain rounded-lg shadow" />
-              <span className="mt-3 text-sm font-medium text-gray-700">Venmo</span>
-            </div>
-          </div>
+          ) : (
+            <>
+              {/* Mission Statement */}
+              <p className="text-gray-700 mb-8 text-center text-lg">
+                Your donation helps provide financial support for mental health and addiction treatment, 
+                creating pathways to healing for those in need.
+              </p>
 
-          {/* Tax Information */}
-          <p className="text-xs text-gray-500 mt-6 text-center">
-            One Song Foundation is a 501(c)(3) nonprofit organization. 
-            Your donation may be tax-deductible.
-          </p>
+              {/* Donation QR Codes */}
+              <div className="mb-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/paypal.png" 
+                    alt="PayPal QR Code" 
+                    className="w-56 h-56 object-contain rounded-lg shadow cursor-pointer" 
+                    onClick={() => setZoomSrc('/paypal.png')} 
+                  />
+                  <button
+                    onClick={() => setZoomSrc('/paypal.png')}
+                    className="mt-3 text-sm font-medium text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-300 rounded"
+                  >
+                    PayPal
+                  </button>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/venmo.png" 
+                    alt="Venmo QR Code" 
+                    className="w-56 h-56 object-contain rounded-lg shadow cursor-pointer" 
+                    onClick={() => setZoomSrc('/venmo.png')} 
+                  />
+                  <button
+                    onClick={() => setZoomSrc('/venmo.png')}
+                    className="mt-3 text-sm font-medium text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-300 rounded"
+                  >
+                    Venmo
+                  </button>
+                </div>
+              </div>
+
+              {/* Tax Information */}
+              <p className="text-xs text-gray-500 mt-6 text-center">
+                One Song Foundation is a 501(c)(3) nonprofit organization. 
+                Your donation may be tax-deductible.
+              </p>
+            </>
+          )}
         </div>
       </div>
     </div>
