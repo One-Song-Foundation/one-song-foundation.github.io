@@ -43,7 +43,6 @@ export default function Bio() {
           className="rounded-full mb-6 shadow-lg object-cover"
         />
         <h1 className="text-3xl font-bold text-gray-900 mb-2 text-center">Carl Gish</h1>
-        <div className="text-blue-600 font-semibold mb-4 text-center">Cofounder</div>
         <p className="text-lg text-gray-700 text-center mb-2">
           Carl is a valued member of the One Song Foundation team. His commitment to service and his compassionate spirit help drive the mission forward every day.
         </p>
