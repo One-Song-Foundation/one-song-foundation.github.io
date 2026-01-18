@@ -31,7 +31,10 @@ export default function Navigation() {
             <Link href="/partners" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
               Partners
             </Link>
-            <button 
+            <Link href="/applicants" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
+              Applicants
+            </Link>
+            <button
               onClick={() => setIsDonationModalOpen(true)}
               className="bg-blue-600 text-white font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-700"
             >
@@ -63,9 +66,12 @@ export default function Navigation() {
               Team
             </Link>
             <Link href="/partners" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              Partnerships
+              Partners
             </Link>
-            <button 
+            <Link href="/applicants" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
+              Applicants
+            </Link>
+            <button
               onClick={() => setIsDonationModalOpen(true)}
               className="block bg-blue-600 text-white px-6 py-2 rounded-full font-medium text-center hover:bg-blue-700 transition-colors w-full"
             >
