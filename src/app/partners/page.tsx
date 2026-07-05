@@ -4,6 +4,7 @@ import SectionHeading from '../../components/ui/SectionHeading'
 
 export const metadata = {
   title: 'Partners - One Song Foundation',
+  alternates: { canonical: '/partners' },
 }
 
 export default function Partners() {

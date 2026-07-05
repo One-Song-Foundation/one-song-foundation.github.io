@@ -4,6 +4,7 @@ import SectionHeading from '../../components/ui/SectionHeading'
 
 export const metadata = {
   title: 'About - One Song Foundation',
+  alternates: { canonical: '/about' },
 }
 
 export default function About() {

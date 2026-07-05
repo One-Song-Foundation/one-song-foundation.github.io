@@ -4,6 +4,7 @@ import SectionHeading from '../../components/ui/SectionHeading'
 
 export const metadata = {
   title: 'Team - One Song Foundation',
+  alternates: { canonical: '/team' },
 }
 
 export default function Bio() {

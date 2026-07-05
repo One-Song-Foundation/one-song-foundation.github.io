@@ -4,6 +4,7 @@ import SectionHeading from '../../components/ui/SectionHeading'
 
 export const metadata = {
   title: 'Applicants - One Song Foundation',
+  alternates: { canonical: '/applicants' },
 }
 
 const STEPS = [
