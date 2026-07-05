@@ -1,62 +1,60 @@
 import Link from 'next/link'
+import Logo from './ui/Logo'
+import Icon from './ui/Icon'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">One Song Foundation</h3>
-            <p className="text-gray-400">
-              Creating pathways to healing through financial support for mental health and addiction treatment.
-            </p>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-            <ul className="flex flex-col space-y-2 w-full">
-              <li>
-                <Link href="/" className="block w-full text-left text-gray-400 hover:text-white transition-colors px-2 py-1 rounded">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="block w-full text-left text-gray-400 hover:text-white transition-colors px-2 py-1 rounded">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/team" className="block w-full text-left text-gray-400 hover:text-white transition-colors px-2 py-1 rounded">
-                  Team
-                </Link>
-              </li>
-              <li>
-                <Link href="/partners" className="block w-full text-left text-gray-400 hover:text-white transition-colors px-2 py-1 rounded">
-                  Partners
-                </Link>
-              </li>
-              <li>
-                <a href="https://www.paypal.com/fundraiser/charity/5615963" target="_blank" rel="noopener noreferrer" className="block w-full text-left text-gray-400 hover:text-white transition-colors px-2 py-1 rounded">
-                  Donate
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>Email: <a href="mailto:chris@onesongfoundation.org" className="underline hover:text-white">chris@onesongfoundation.org</a></li>
-              <li>Phone: (408) 320-9319</li>
-              <li>Founded in California</li>
-            </ul>
+    <footer className="site-footer">
+      <div className="container-os site-footer__inner">
+        <div className="site-footer__brand">
+          <Logo tone="light" height={40} />
+          <p>
+            A unifying thread of love and truth beneath all things. We bridge the gap between
+            insurance and the care that makes lasting recovery possible.
+          </p>
+          <div className="site-footer__social">
+            <a href="mailto:chris@onesongfoundation.org" aria-label="Email"><Icon name="mail" size={18} /></a>
+            <a href="tel:+14083209319" aria-label="Phone"><Icon name="phone" size={18} /></a>
           </div>
         </div>
-        
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} One Song Foundation. All rights reserved.</p>
+        <div className="site-footer__cols">
+          <div>
+            <h4>Foundation</h4>
+            <Link href="/about">About</Link>
+            <Link href="/team">Team</Link>
+            <Link href="/partners">Partners</Link>
+          </div>
+          <div>
+            <h4>Get help</h4>
+            <Link href="/applicants">Apply for support</Link>
+            <Link href="/partners">Find treatment</Link>
+          </div>
+          <div>
+            <h4>Give</h4>
+            <a href="https://www.paypal.com/fundraiser/charity/5615963" target="_blank" rel="noopener noreferrer">Donate</a>
+            <a href="mailto:partnerships@onesongfoundation.org">Partner with us</a>
+          </div>
         </div>
+      </div>
+      <div className="container-os site-footer__affil">
+        <div className="affil">
+          <span className="affil__label">Partner</span>
+          <a href="https://www.embodiedrecovery.com/" target="_blank" rel="noopener noreferrer" aria-label="Embodied Recovery">
+            <img src="/embodiedrecovery.svg" alt="Embodied Recovery" className="affil__logo-er" />
+          </a>
+        </div>
+        <div className="affil">
+          <span className="affil__label">Affiliate</span>
+          <a href="https://www.meloscenter.org/" target="_blank" rel="noopener noreferrer" aria-label="Melos Center">
+            <img src="/meloscenter.png" alt="Melos Center" className="affil__logo-melos" />
+            <span>Melos Center</span>
+          </a>
+        </div>
+      </div>
+      <div className="container-os site-footer__legal">
+        <span>&copy; {new Date().getFullYear()} One Song Foundation &middot; 501(c)(3) nonprofit &middot; Founded in California</span>
+        <span>If you&apos;re in crisis, call or text <strong>988</strong>.</span>
       </div>
     </footer>
   )
-} 
+}

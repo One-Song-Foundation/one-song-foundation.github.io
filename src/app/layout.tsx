@@ -1,10 +1,27 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Newsreader, Hanken_Grotesk, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const newsreader = Newsreader({
+  subsets: ['latin'],
+  style: ['normal', 'italic'],
+  weight: ['400', '500', '600'],
+  variable: '--font-newsreader',
+})
+
+const hanken = Hanken_Grotesk({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-hanken',
+})
+
+const jetbrains = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-jetbrains',
+})
 
 export const metadata: Metadata = {
   title: 'One Song Foundation - Supporting the Journey Back to Self Love',
@@ -83,7 +100,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.className} min-h-screen bg-white flex flex-col`}>
+      <body className={`${newsreader.variable} ${hanken.variable} ${jetbrains.variable} min-h-screen flex flex-col`}>
         <Navigation />
         <main className="flex-grow">
           {children}

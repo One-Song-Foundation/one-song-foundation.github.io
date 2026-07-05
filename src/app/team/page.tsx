@@ -1,56 +1,81 @@
-import Image from 'next/image';
-import { FaLinkedin } from 'react-icons/fa';
+import Image from 'next/image'
+import Icon from '../../components/ui/Icon'
+import SectionHeading from '../../components/ui/SectionHeading'
+
+export const metadata = {
+  title: 'Team - One Song Foundation',
+}
 
 export default function Bio() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-white py-24 px-4">
-      <div className="max-w-2xl w-full bg-blue-50 rounded-2xl shadow-md p-8 flex flex-col items-center mb-12">
-        <Image
-          src="/chris.png"
-          alt="Chris Chen"
-          width={200}
-          height={200}
-          className="rounded-full mb-6 shadow-lg object-cover"
-        />
-        <h1 className="text-3xl font-bold text-gray-900 mb-2 text-center">Christopher Chen</h1>
-        <div className="text-blue-600 font-semibold mb-4 text-center">Founder</div>
-        <p className="text-lg text-gray-700 text-center mb-2">
-          Chris Chen is a software engineer in recovery who found healing through breath, movement, and meditation. After years of navigating depression, emotional exhaustion, and unhealthy coping habits, he began practicing Sundo — a Korean Taoist meditation — which helped him break free from dependency, come off antidepressants, and reconnect with a sense of purpose.
-        </p>
-        <p className="text-lg text-gray-700 text-center mb-2">
-          Through this journey, Chris realized that recovery isn't just about letting go of what harms us — it's about rediscovering our love for ourselves.
-        </p>
-        <p className="text-lg text-gray-700 text-center mb-2">
-          He founded the One Song Foundation so that everyone — regardless of background, status, or resources — could have equal access to excellent care. With a background in blockchain and fintech, and a deep personal commitment to recovery, Chris is building bridges between ancient wisdom and modern tools to help others rediscover their rhythm — their one song.
-        </p>
-        <a href="https://www.linkedin.com/in/cchen408/" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center gap-2 text-blue-700 hover:text-blue-900 transition-colors">
-          <FaLinkedin className="text-2xl" />
-          <span className="text-lg">LinkedIn</span>
-        </a>
-        <a href="mailto:chris@onesongfoundation.org" className="mt-2 flex items-center gap-2 text-blue-700 hover:text-blue-900 transition-colors">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          <span className="text-lg">chris@onesongfoundation.org</span>
-        </a>
-      </div>
-      <div className="max-w-2xl w-full bg-blue-50 rounded-2xl shadow-md p-8 flex flex-col items-center">
-        <Image
-          src="/carl.png"
-          alt="Carl's Photo"
-          width={200}
-          height={200}
-          className="rounded-full mb-6 shadow-lg object-cover"
-        />
-        <h1 className="text-3xl font-bold text-gray-900 mb-2 text-center">Carl Gish</h1>
-        <p className="text-lg text-gray-700 text-center mb-2">
-          Carl is a valued member of the One Song Foundation team. His commitment to service and his compassionate spirit help drive the mission forward every day.
-        </p>
-        <a href="https://www.linkedin.com/in/carlgish/" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center gap-2 text-blue-700 hover:text-blue-900 transition-colors">
-          <FaLinkedin className="text-2xl" />
-          <span className="text-lg">LinkedIn</span>
-        </a>
-      </div>
+    <main className="min-h-screen">
+      {/* Hero */}
+      <section className="page-hero">
+        <div className="container-os page-hero__inner">
+          <span className="os-eyebrow">Our team</span>
+          <h1 className="page-hero__title">Meet the <em>founder</em></h1>
+        </div>
+      </section>
+
+      {/* Founder feature */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container-os feature">
+          <div className="founder-portrait">
+            <Image
+              src="/chris.png"
+              alt="Chris Chen"
+              width={560}
+              height={700}
+              className="founder-portrait__img"
+              priority
+            />
+          </div>
+          <div className="feature__body">
+            <SectionHeading
+              eyebrow="Founder"
+              title="Christopher Chen"
+              size="lg"
+              as="h2"
+            />
+            <p>
+              Chris Chen is a software engineer in recovery who found healing through breath,
+              movement, and meditation. After years of navigating depression, emotional exhaustion,
+              and unhealthy coping habits, he began practicing Sundo — a Korean Taoist meditation —
+              which helped him break free from dependency, come off antidepressants, and reconnect
+              with a sense of purpose.
+            </p>
+            <p>
+              Through this journey, Chris realized that recovery isn&apos;t just about letting go of
+              what harms us — it&apos;s about rediscovering our love for ourselves.
+            </p>
+            <p>
+              He founded the One Song Foundation so that everyone — regardless of background, status,
+              or resources — could have equal access to excellent care. With a background in
+              blockchain and fintech, and a deep personal commitment to recovery, Chris is building
+              bridges between ancient wisdom and modern tools to help others rediscover their rhythm —
+              their one song.
+            </p>
+            <div className="founder-links">
+              <a href="https://www.linkedin.com/in/cchen408/" target="_blank" rel="noopener noreferrer">
+                <Icon name="linkedin" size={18} />
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:chris@onesongfoundation.org">
+                <Icon name="mail" size={18} />
+                <span>chris@onesongfoundation.org</span>
+              </a>
+              <a
+                href="https://www.meloscenter.org/blog/www-meloscenter-org-blog--how-an-ancient-practice-helped-me-rebuild-my-health"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon name="external-link" size={18} />
+                <span>Chris&apos;s story: How an ancient practice helped me rebuild my health</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-  );
-} 
+  )
+}
