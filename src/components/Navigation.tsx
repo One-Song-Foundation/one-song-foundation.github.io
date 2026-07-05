@@ -1,91 +1,98 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import DonationModal from './DonationModal'
+import Logo from './ui/Logo'
+import Button from './ui/Button'
+import Icon from './ui/Icon'
+
+const NAV_LINKS = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/team', label: 'Team' },
+  { href: '/partners', label: 'Partners' },
+  { href: '/applicants', label: 'Applicants' },
+]
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isDonationModalOpen, setIsDonationModalOpen] = useState(false)
+  const pathname = usePathname()
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex items-center text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
-            <img src="/logo.png" alt="One Song Foundation Logo" className="h-10 w-auto mr-3" />
-            <span>One Song Foundation</span>
-          </Link>
-          
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-2">
-            <Link href="/" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
-              Home
-            </Link>
-            <Link href="/about" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
-              About
-            </Link>
-            <Link href="/team" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
-              Team
-            </Link>
-            <Link href="/partners" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
-              Partners
-            </Link>
-            <Link href="/applicants" className="text-gray-600 font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-600 hover:text-white">
-              Applicants
-            </Link>
-            <button
-              onClick={() => setIsDonationModalOpen(true)}
-              className="bg-blue-600 text-white font-bold px-6 py-2 rounded-full transition-colors hover:bg-blue-700"
-            >
-              Donate
-            </button>
-          </div>
+    <header className="site-header">
+      <div className="container-os site-header__inner">
+        <Link href="/" className="site-logo" aria-label="One Song Foundation home">
+          <Logo height={38} />
+        </Link>
 
-          {/* Mobile menu button */}
-          <button 
-            className="md:hidden text-gray-600 hover:text-blue-600 transition-colors"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        {/* Desktop navigation */}
+        <nav className="site-nav">
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={'site-nav__link' + (pathname === link.href ? ' is-active' : '')}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="site-header__cta">
+          <Button variant="secondary" size="sm" href="/applicants">Get help</Button>
+          <Button
+            variant="accent"
+            size="sm"
+            iconRight={<Icon name="heart" size={15} />}
+            onClick={() => setIsDonationModalOpen(true)}
           >
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+            Donate
+          </Button>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-4">
-            <Link href="/" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              Home
-            </Link>
-            <Link href="/about" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              About
-            </Link>
-            <Link href="/team" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              Team
-            </Link>
-            <Link href="/partners" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              Partners
-            </Link>
-            <Link href="/applicants" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              Applicants
-            </Link>
-            <button
-              onClick={() => setIsDonationModalOpen(true)}
-              className="block bg-blue-600 text-white px-6 py-2 rounded-full font-medium text-center hover:bg-blue-700 transition-colors w-full"
+        {/* Mobile menu button */}
+        <button
+          className="site-header__menu-btn"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+        >
+          <Icon name={isMobileMenuOpen ? 'x' : 'menu'} size={24} />
+        </button>
+      </div>
+
+      {/* Mobile navigation */}
+      {isMobileMenuOpen && (
+        <div className="container-os">
+          <nav className="site-mobile-nav">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={'site-nav__link' + (pathname === link.href ? ' is-active' : '')}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Button
+              variant="accent"
+              block
+              iconRight={<Icon name="heart" size={15} />}
+              onClick={() => { setIsMobileMenuOpen(false); setIsDonationModalOpen(true) }}
             >
               Donate
-            </button>
-          </div>
-        )}
-      </div>
-      
-      {/* Donation Modal */}
-      <DonationModal 
-        isOpen={isDonationModalOpen} 
-        onClose={() => setIsDonationModalOpen(false)} 
+            </Button>
+          </nav>
+        </div>
+      )}
+
+      <DonationModal
+        isOpen={isDonationModalOpen}
+        onClose={() => setIsDonationModalOpen(false)}
       />
-    </nav>
+    </header>
   )
-} 
+}

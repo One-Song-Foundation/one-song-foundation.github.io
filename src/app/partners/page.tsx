@@ -1,45 +1,73 @@
-import React from 'react';
+import Button from '../../components/ui/Button'
+import Icon from '../../components/ui/Icon'
+import SectionHeading from '../../components/ui/SectionHeading'
+
+export const metadata = {
+  title: 'Partners - One Song Foundation',
+}
 
 export default function Partners() {
   return (
     <main className="min-h-screen">
-      <section className="bg-blue-50 py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">Partnerships</h1>
-            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              We believe in the power of collaboration. If you are an organization, treatment center, or individual interested in partnering with One Song Foundation to expand access to transformative care, we would love to connect with you.
+      {/* Hero */}
+      <section className="page-hero">
+        <div className="container-os page-hero__inner">
+          <span className="os-eyebrow">Partnerships</span>
+          <h1 className="page-hero__title">Better <em>together</em></h1>
+          <p className="page-hero__lead">
+            We believe in the power of collaboration. If you are an organization, treatment center,
+            or individual interested in partnering with One Song Foundation to expand access to
+            transformative care, we would love to connect with you.
+          </p>
+        </div>
+      </section>
+
+      {/* Become a partner */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container-os mission-split">
+          <SectionHeading
+            eyebrow="Become a partner"
+            title={<>We fund <em>excellent care</em></>}
+            size="md"
+          />
+          <div className="mission-split__body">
+            <p className="m-0">
+              At One Song, we are always looking to partner with treatment centers providing excellent
+              care. If you believe you are offering exceptional mental health or addiction treatment
+              services, we would love to meet you and learn more about what you do.
             </p>
-            <div className="bg-white p-10 rounded-2xl shadow-md mt-16">
-              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Become a Partner</h3>
-              <p className="text-xl text-gray-700 leading-relaxed mb-4">
-                At One Song, we are always looking to partner with treatment centers providing excellent care. If you believe you are offering exceptional mental health or addiction treatment services, we would love to meet you and learn more about what you do.
-              </p>
-              <p className="text-xl text-gray-700 leading-relaxed mb-4">
-                We understand that excellent care is not cheap, and many clients may not have the financial means to afford it. That's what we hope to address at One Song. By providing scholarships or grants, we can help more clients access transformative treatment and increase the effectiveness of their care.
-              </p>
-              <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                For partnership inquiries, please email
-                {' '}
-                <a href="mailto:partnerships@onesongfoundation.org?subject=Partnership%20Inquiry" className="text-blue-700 hover:underline">partnerships@onesongfoundation.org</a>.
-              </p>
+            <p className="m-0">
+              We understand that excellent care is not cheap, and many clients may not have the
+              financial means to afford it. That&apos;s what we hope to address at One Song. By
+              providing scholarships or grants, we can help more clients access transformative
+              treatment and increase the effectiveness of their care.
+            </p>
+            <div>
+              <Button
+                variant="primary"
+                href="mailto:partnerships@onesongfoundation.org?subject=Partnership%20Inquiry"
+                external
+                iconRight={<Icon name="mail" size={16} />}
+              >
+                partnerships@onesongfoundation.org
+              </Button>
             </div>
           </div>
         </div>
       </section>
-      {/* Our Partners Section */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">Our Partners</h2>
-            <ul className="space-y-6">
-              <li className="bg-blue-50 rounded-xl p-6 shadow flex flex-col items-center">
-                <span className="mb-4 h-20 flex items-center justify-center text-3xl font-extrabold text-blue-600 animate-pulse">🚀 Coming Soon! 🚀</span>
-              </li>
-            </ul>
-          </div>
+
+      {/* Our partners */}
+      <section className="section section--sunken">
+        <div className="container-os">
+          <SectionHeading
+            align="center"
+            eyebrow="Our partners"
+            title="A growing circle of care"
+            lead="Announcements coming soon — we're building relationships with treatment centers that share our commitment to accessible, quality care."
+            size="md"
+          />
         </div>
       </section>
     </main>
-  );
-} 
+  )
+}
