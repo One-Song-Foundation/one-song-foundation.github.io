@@ -59,7 +59,7 @@ export default function Home() {
                 borderRadius: 'var(--radius-xl)',
               }}
             >
-              <Logo variant="mark" height={260} style={{ opacity: 0.16 }} />
+              <Logo variant="mark" height={260} />
               <span className="photo-frame__label" style={{ color: 'var(--text-faint)' }}>
                 The one song — a single continuous, imperfect, whole stroke
               </span>

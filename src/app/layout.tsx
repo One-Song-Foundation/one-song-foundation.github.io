@@ -46,10 +46,10 @@ export const metadata: Metadata = {
     siteName: 'One Song Foundation',
     images: [
       {
-        url: '/logo.png',
-        width: 512,
-        height: 512,
-        alt: 'One Song Foundation Logo',
+        url: '/og.png',
+        width: 1200,
+        height: 630,
+        alt: 'One Song Foundation — Supporting the journey back to self love',
       },
     ],
     locale: 'en_US',
@@ -59,8 +59,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'One Song Foundation - Supporting the Journey Back to Self Love',
     description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
-    images: ['/logo.png'],
+    images: ['/og.png'],
   },
+  themeColor: '#faf6ee',
   robots: {
     index: true,
     follow: true,
@@ -71,9 +72,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'your-google-verification-code', // You'll need to add your actual Google verification code
   },
 }
 
