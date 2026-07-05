@@ -56,26 +56,13 @@ export default function Bio() {
                 <Icon name="mail" size={18} />
                 <span>chris@onesongfoundation.org</span>
               </a>
-            </div>
-          </Card>
-
-          <Card variant="raised" className="team-card w-full max-w-2xl">
-            <Image
-              src="/carl.png"
-              alt="Carl Gish"
-              width={180}
-              height={180}
-              className="team-card__photo"
-            />
-            <h2>Carl Gish</h2>
-            <p>
-              Carl is a valued member of the One Song Foundation team. His commitment to service and
-              his compassionate spirit help drive the mission forward every day.
-            </p>
-            <div className="team-card__links">
-              <a href="https://www.linkedin.com/in/carlgish/" target="_blank" rel="noopener noreferrer">
-                <Icon name="linkedin" size={18} />
-                <span>LinkedIn</span>
+              <a
+                href="https://www.meloscenter.org/blog/www-meloscenter-org-blog--how-an-ancient-practice-helped-me-rebuild-my-health"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon name="external-link" size={18} />
+                <span>Chris&apos;s story: How an ancient practice helped me rebuild my health</span>
               </a>
             </div>
           </Card>

@@ -441,12 +441,12 @@ h1, h2, h3, h4 {
 @media (min-width: 640px) { .site-footer__legal { flex-direction: row; } }
 .site-footer__legal strong { color: var(--amber-300); }
 
-/* Page hero (interior pages) */
+/* Page hero (interior pages) — centered */
 .page-hero { background: radial-gradient(70% 100% at 50% 0%, var(--green-50), transparent 70%); padding: var(--space-9) 0 var(--space-8); }
-.page-hero__inner { max-width: 56rem; }
+.page-hero__inner { max-width: 56rem; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; }
 .page-hero__title { font-size: clamp(34px, 4vw, 47px); margin: 14px 0 0; letter-spacing: -0.02em; }
 .page-hero__title em { font-style: italic; color: var(--green-700); font-weight: 500; }
-.page-hero__lead { font-size: var(--text-md); color: var(--text-muted); max-width: 40rem; margin: 18px 0 0; }
+.page-hero__lead { font-size: var(--text-md); color: var(--text-muted); max-width: 40rem; margin: 18px auto 0; }
 
 /* Numbered steps */
 .help-steps { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 44px; }
@@ -486,7 +486,7 @@ h1, h2, h3, h4 {
 
 /* Team cards */
 .team-card { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; }
-.team-card__photo { width: 180px; height: 180px; border-radius: var(--radius-circle); box-shadow: var(--shadow-md); object-fit: cover; margin-bottom: 14px; border: 4px solid var(--surface-card); }
+.team-card__photo { width: 180px; height: 180px; border-radius: var(--radius-circle); box-shadow: var(--shadow-md); object-fit: cover; object-position: center 18%; margin-bottom: 14px; border: 4px solid var(--surface-card); }
 .team-card h2 { font-size: var(--text-xl); margin: 0; }
 .team-card__role { font-family: var(--font-sans); font-size: var(--text-2xs); font-weight: var(--weight-bold); letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--color-accent-strong); }
 .team-card p { font-size: var(--text-base); color: var(--text-muted); text-align: left; }

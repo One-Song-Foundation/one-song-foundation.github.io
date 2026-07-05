@@ -24,13 +24,14 @@ export default function Partners() {
 
       {/* Become a partner */}
       <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container-os mission-split">
+        <div className="container-os cta__inner">
           <SectionHeading
+            align="center"
             eyebrow="Become a partner"
             title={<>We fund <em>excellent care</em></>}
             size="md"
           />
-          <div className="mission-split__body">
+          <div className="max-w-2xl mx-auto text-center flex flex-col gap-4">
             <p className="m-0">
               At One Song, we are always looking to partner with treatment centers providing excellent
               care. If you believe you are offering exceptional mental health or addiction treatment
@@ -42,17 +43,15 @@ export default function Partners() {
               providing scholarships or grants, we can help more clients access transformative
               treatment and increase the effectiveness of their care.
             </p>
-            <div>
-              <Button
-                variant="primary"
-                href="mailto:partnerships@onesongfoundation.org?subject=Partnership%20Inquiry"
-                external
-                iconRight={<Icon name="mail" size={16} />}
-              >
-                partnerships@onesongfoundation.org
-              </Button>
-            </div>
           </div>
+          <Button
+            variant="primary"
+            href="mailto:partnerships@onesongfoundation.org?subject=Partnership%20Inquiry"
+            external
+            iconRight={<Icon name="mail" size={16} />}
+          >
+            partnerships@onesongfoundation.org
+          </Button>
         </div>
       </section>
 

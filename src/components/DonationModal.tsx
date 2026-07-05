@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { createPortal } from 'react-dom'
 import { FaPaypal } from 'react-icons/fa'
 import Icon from './ui/Icon'
 import Button from './ui/Button'
@@ -13,10 +14,12 @@ interface DonationModalProps {
 export default function DonationModal({ isOpen, onClose }: DonationModalProps) {
   const [zoomSrc, setZoomSrc] = useState<string | null>(null)
 
-  if (!isOpen) return null
+  if (!isOpen || typeof document === 'undefined') return null
 
-  return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+  // Portal to <body>: the sticky header's backdrop-filter creates a containing
+  // block that would otherwise trap this fixed-position overlay inside it.
+  return createPortal(
+    <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-[100] p-4">
       <div className="bg-card rounded-os-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-os-lg">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-sand-200">
@@ -107,6 +110,7 @@ export default function DonationModal({ isOpen, onClose }: DonationModalProps) {
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }

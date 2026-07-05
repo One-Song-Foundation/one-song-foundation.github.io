@@ -24,17 +24,20 @@ export default function About() {
 
       {/* How we help */}
       <section className="section">
-        <div className="container-os mission-split">
+        <div className="container-os cta__inner">
           <SectionHeading
+            align="center"
             eyebrow="How we help"
             title={<>Closing the gap between insurance and <em>excellent care</em></>}
             size="md"
           />
-          <ul className="mission-list">
-            <li><Icon name="circle-check" size={18} />Bridges the financial gap between insurance and actual treatment costs</li>
-            <li><Icon name="circle-check" size={18} />Grants longer, more impactful stays in treatment</li>
-            <li><Icon name="circle-check" size={18} />Promotes excellence in treatment</li>
-          </ul>
+          <Card variant="soft" className="w-full max-w-2xl mx-auto">
+            <ul className="mission-list">
+              <li><Icon name="circle-check" size={18} />Bridges the financial gap between insurance and actual treatment costs</li>
+              <li><Icon name="circle-check" size={18} />Grants longer, more impactful stays in treatment</li>
+              <li><Icon name="circle-check" size={18} />Promotes excellence in treatment</li>
+            </ul>
+          </Card>
         </div>
       </section>
 
