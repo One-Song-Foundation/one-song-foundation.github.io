@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Card from '../../components/ui/Card'
 import Icon from '../../components/ui/Icon'
+import SectionHeading from '../../components/ui/SectionHeading'
 
 export const metadata = {
   title: 'Team - One Song Foundation',
@@ -13,22 +13,30 @@ export default function Bio() {
       <section className="page-hero">
         <div className="container-os page-hero__inner">
           <span className="os-eyebrow">Our team</span>
-          <h1 className="page-hero__title">The people behind the <em>one song</em></h1>
+          <h1 className="page-hero__title">Meet the <em>founder</em></h1>
         </div>
       </section>
 
+      {/* Founder feature */}
       <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container-os flex flex-col items-center gap-8">
-          <Card variant="raised" className="team-card w-full max-w-2xl">
+        <div className="container-os feature">
+          <div className="founder-portrait">
             <Image
               src="/chris.png"
               alt="Chris Chen"
-              width={180}
-              height={180}
-              className="team-card__photo"
+              width={560}
+              height={700}
+              className="founder-portrait__img"
+              priority
             />
-            <h2>Christopher Chen</h2>
-            <div className="team-card__role">Founder</div>
+          </div>
+          <div className="feature__body">
+            <SectionHeading
+              eyebrow="Founder"
+              title="Christopher Chen"
+              size="lg"
+              as="h2"
+            />
             <p>
               Chris Chen is a software engineer in recovery who found healing through breath,
               movement, and meditation. After years of navigating depression, emotional exhaustion,
@@ -47,7 +55,7 @@ export default function Bio() {
               bridges between ancient wisdom and modern tools to help others rediscover their rhythm —
               their one song.
             </p>
-            <div className="team-card__links">
+            <div className="founder-links">
               <a href="https://www.linkedin.com/in/cchen408/" target="_blank" rel="noopener noreferrer">
                 <Icon name="linkedin" size={18} />
                 <span>LinkedIn</span>
@@ -65,7 +73,7 @@ export default function Bio() {
                 <span>Chris&apos;s story: How an ancient practice helped me rebuild my health</span>
               </a>
             </div>
-          </Card>
+          </div>
         </div>
       </section>
     </main>
