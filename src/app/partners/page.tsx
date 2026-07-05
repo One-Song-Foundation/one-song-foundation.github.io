@@ -55,16 +55,53 @@ export default function Partners() {
         </div>
       </section>
 
-      {/* Our partners */}
+      {/* Our partners & affiliates */}
       <section className="section section--sunken">
-        <div className="container-os">
+        <div className="container-os cta__inner">
           <SectionHeading
             align="center"
-            eyebrow="Our partners"
+            eyebrow="Our partners &amp; affiliates"
             title="A growing circle of care"
-            lead="Announcements coming soon — we're building relationships with treatment centers that share our commitment to accessible, quality care."
+            lead="Organizations that share our commitment to accessible, quality care."
             size="md"
           />
+          <div className="partner-cards">
+            <a
+              href="https://www.embodiedrecovery.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="partner-card"
+            >
+              <span className="os-badge os-badge--brand">Partner</span>
+              <img src="/embodiedrecovery.svg" alt="Embodied Recovery" className="partner-card__logo" />
+              <p>
+                Outpatient mental health and addiction treatment in Campbell, California, integrating
+                psychological, biological, social, and spiritual elements of care.
+              </p>
+              <span className="partner-card__cta">
+                embodiedrecovery.com <Icon name="external-link" size={14} />
+              </span>
+            </a>
+            <a
+              href="https://www.meloscenter.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="partner-card"
+            >
+              <span className="os-badge os-badge--accent">Affiliate</span>
+              <span className="partner-card__melos">
+                <img src="/meloscenter.png" alt="" className="partner-card__melos-mark" />
+                Melos Center
+              </span>
+              <p>
+                A generative space dedicated to recovering the heart&apos;s melody — through dance,
+                embodied breathwork, teachings, meditation, and community.
+              </p>
+              <span className="partner-card__cta">
+                meloscenter.org <Icon name="external-link" size={14} />
+              </span>
+            </a>
+          </div>
         </div>
       </section>
     </main>

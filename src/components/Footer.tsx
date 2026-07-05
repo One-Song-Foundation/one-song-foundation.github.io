@@ -36,6 +36,21 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className="container-os site-footer__affil">
+        <div className="affil">
+          <span className="affil__label">Partner</span>
+          <a href="https://www.embodiedrecovery.com/" target="_blank" rel="noopener noreferrer" aria-label="Embodied Recovery">
+            <img src="/embodiedrecovery.svg" alt="Embodied Recovery" className="affil__logo-er" />
+          </a>
+        </div>
+        <div className="affil">
+          <span className="affil__label">Affiliate</span>
+          <a href="https://www.meloscenter.org/" target="_blank" rel="noopener noreferrer" aria-label="Melos Center">
+            <img src="/meloscenter.png" alt="Melos Center" className="affil__logo-melos" />
+            <span>Melos Center</span>
+          </a>
+        </div>
+      </div>
       <div className="container-os site-footer__legal">
         <span>&copy; {new Date().getFullYear()} One Song Foundation &middot; 501(c)(3) nonprofit &middot; Founded in California</span>
         <span>If you&apos;re in crisis, call or text <strong>988</strong>.</span>
