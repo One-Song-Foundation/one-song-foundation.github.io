@@ -27,7 +27,7 @@ export default function Home() {
         <div className="container-os hero__grid">
           <div className="hero__copy">
             <span className="os-eyebrow">Creating pathways to healing</span>
-            <h1 className="hero__title">Supporting the journey back to <em>self love</em>.</h1>
+            <h1 className="hero__title">Supporting the journey back to <em>yourself</em>.</h1>
             <p className="hero__lead">
               Every person deserves access to effective, transformative treatment for mental health
               and addiction. Yet for too many, financial barriers and insurance limitations block the

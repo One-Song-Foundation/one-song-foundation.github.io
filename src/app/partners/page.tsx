@@ -34,9 +34,10 @@ export default function Partners() {
           />
           <div className="max-w-2xl mx-auto text-center flex flex-col gap-4">
             <p className="m-0">
-              At One Song, we are always looking to partner with treatment centers providing excellent
-              care. If you believe you are offering exceptional mental health or addiction treatment
-              services, we would love to meet you and learn more about what you do.
+              At One Song, we are always looking to partner with treatment centers doing meaningful
+              work. Excellent care takes many forms, and we don&apos;t assume we know all of them. If
+              you are offering mental health or addiction treatment you believe in, we would love to
+              meet you and learn more about what you do and how you do it.
             </p>
             <p className="m-0">
               We understand that excellent care is not cheap, and many clients may not have the
