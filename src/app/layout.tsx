@@ -24,7 +24,7 @@ const jetbrains = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'One Song Foundation - Supporting the Journey Back to Self Love',
+  title: 'One Song Foundation - Supporting the Journey Back to Yourself',
   description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
   keywords: 'mental health, addiction treatment, recovery, financial support, treatment center, mental health foundation',
   authors: [{ name: 'One Song Foundation' }],
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'One Song Foundation - Supporting the Journey Back to Self Love',
+    title: 'One Song Foundation - Supporting the Journey Back to Yourself',
     description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
     url: 'https://onesongfoundation.org',
     siteName: 'One Song Foundation',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         url: '/og.png',
         width: 1200,
         height: 630,
-        alt: 'One Song Foundation — Supporting the journey back to self love',
+        alt: 'One Song Foundation — Supporting the journey back to yourself',
       },
     ],
     locale: 'en_US',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'One Song Foundation - Supporting the Journey Back to Self Love',
+    title: 'One Song Foundation - Supporting the Journey Back to Yourself',
     description: 'Creating pathways to healing through financial support for mental health and addiction treatment.',
     images: ['/og.png'],
   },

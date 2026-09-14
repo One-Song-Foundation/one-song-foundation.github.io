@@ -46,37 +46,37 @@ export default function About() {
       <section className="section section--sunken">
         <div className="container-os">
           <SectionHeading
-            eyebrow="What sets our partners apart"
-            title="Qualities of exceptional treatment"
-            lead="We look for treatment centers that offer care worth fighting for."
+            eyebrow="What we've seen work well"
+            title="Qualities we&apos;ve seen make a difference"
+            lead="These aren&apos;t requirements — they&apos;re what we&apos;ve noticed in programs doing remarkable work. Excellent care takes many forms, and we&apos;re always glad to learn from models that look different."
             size="lg"
           />
           <div className="values">
             <Card variant="flat" className="value">
               <span className="value__icon"><Icon name="sparkles" size={22} /></span>
-              <h3>Innovative &amp; curated curriculum</h3>
+              <h3>A thoughtfully designed curriculum</h3>
               <ul>
-                <li>Blends psychological and somatic wisdom</li>
-                <li>Clients achieve lasting change and a felt shift in their experience of life</li>
-                <li>Provides a strong post-graduation program</li>
+                <li>Often blends psychological and somatic approaches</li>
+                <li>Clients describe lasting change and a felt shift in their experience of life</li>
+                <li>Thinks carefully about what happens after treatment ends</li>
               </ul>
             </Card>
             <Card variant="flat" className="value">
               <span className="value__icon"><Icon name="users" size={22} /></span>
-              <h3>High-touch, intimate and meaningful care</h3>
+              <h3>High-touch, personal care</h3>
               <ul>
-                <li>Group sizes are intentionally small — 6 to 8 clients maximum</li>
-                <li>Dual facilitation in each group (3–4 clients per clinician)</li>
-                <li>Clients don&apos;t get lost in the shuffle</li>
+                <li>Group sizes kept intentionally small, so no one becomes a number</li>
+                <li>A generous ratio of clinicians to clients</li>
+                <li>Enough attention that clients feel genuinely known</li>
               </ul>
             </Card>
             <Card variant="flat" className="value">
               <span className="value__icon"><Icon name="leaf" size={22} /></span>
-              <h3>Deeply rooted staff culture</h3>
+              <h3>A deeply rooted staff culture</h3>
               <ul>
-                <li>Staff live their recovery and have experienced the change they help others achieve</li>
-                <li>They embody presence, integrity, and authentic recovery</li>
-                <li>They are committed to the mission of the organization and a living example</li>
+                <li>Staff who live what they teach, often having walked a similar path themselves</li>
+                <li>A culture of presence, integrity, and authenticity</li>
+                <li>A shared commitment to the mission that shows up in daily practice</li>
               </ul>
             </Card>
           </div>
