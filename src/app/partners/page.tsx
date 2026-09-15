@@ -125,11 +125,10 @@ export default function Partners() {
               className="partner-card"
             >
               <span className="os-badge os-badge--neutral">First scholarship</span>
-              <img
-                src="/wellnessretreat.png"
-                alt="Wellness Retreat Recovery Center"
-                className="partner-card__logo partner-card__logo--stacked"
-              />
+              <span className="partner-card__id">
+                <img src="/wellnessretreat.png" alt="" className="partner-card__id-mark" />
+                <h3 className="partner-card__name">Wellness Retreat Recovery Center</h3>
+              </span>
               <p>
                 Residential addiction treatment in San Jose, California, serving just six clients at a
                 time — intensive one-on-one therapy alongside clinical and holistic care.
@@ -145,7 +144,9 @@ export default function Partners() {
               className="partner-card"
             >
               <span className="os-badge os-badge--neutral">Second scholarship</span>
-              <img src="/embodiedrecovery.svg" alt="Embodied Recovery" className="partner-card__logo" />
+              <span className="partner-card__id">
+                <img src="/embodiedrecovery.svg" alt="Embodied Recovery" className="partner-card__logo" />
+              </span>
               <p>
                 Outpatient mental health and addiction treatment in Campbell, California, integrating
                 psychological, biological, social, and spiritual elements of care.

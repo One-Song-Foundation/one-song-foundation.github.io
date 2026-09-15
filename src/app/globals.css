@@ -498,7 +498,9 @@ h1, h2, h3, h4 {
 .partner-card { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: var(--space-6); text-decoration: none; color: var(--text-body); transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out), border-color var(--duration-base) var(--ease-out); }
 .partner-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: transparent; }
 .partner-card__logo { height: 30px; width: auto; }
-.partner-card__logo--stacked { height: 86px; width: auto; margin-block: 2px; }
+.partner-card__id { display: flex; align-items: center; gap: 11px; text-align: left; width: 100%; }
+.partner-card__id-mark { height: 34px; width: auto; flex: none; }
+.partner-card__name { font-family: var(--font-display); font-size: var(--text-lg); font-weight: var(--weight-semibold); color: var(--text-strong); line-height: 1.25; margin: 0; text-align: left; }
 .partner-card__melos { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: var(--text-lg); font-weight: var(--weight-semibold); color: var(--text-strong); }
 .partner-card__melos-mark { width: 30px; height: 30px; border-radius: 8px; }
 .partner-card p { font-size: var(--text-sm); color: var(--text-muted); margin: 0; line-height: 1.55; text-align: left; }
