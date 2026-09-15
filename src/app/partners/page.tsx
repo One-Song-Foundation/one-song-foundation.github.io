@@ -106,6 +106,58 @@ export default function Partners() {
           </div>
         </div>
       </section>
+
+      {/* Scholarships awarded */}
+      <section className="section">
+        <div className="container-os cta__inner">
+          <SectionHeading
+            align="center"
+            eyebrow="Where we&apos;ve funded care"
+            title="Scholarships in action"
+            lead="We&apos;ve funded treatment at these centers on behalf of the people they referred to us."
+            size="md"
+          />
+          <div className="partner-cards">
+            <a
+              href="https://wellnessretreatrecovery.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="partner-card"
+            >
+              <span className="os-badge os-badge--neutral">First scholarship</span>
+              <span className="partner-card__id">
+                <img src="/wellnessretreat.png" alt="" className="partner-card__id-mark" />
+                <h3 className="partner-card__name">Wellness Retreat Recovery Center</h3>
+              </span>
+              <p>
+                Residential addiction treatment in San Jose, California, serving just six clients at a
+                time — intensive one-on-one therapy alongside clinical and holistic care.
+              </p>
+              <span className="partner-card__cta">
+                wellnessretreatrecovery.com <Icon name="external-link" size={14} />
+              </span>
+            </a>
+            <a
+              href="https://www.embodiedrecovery.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="partner-card"
+            >
+              <span className="os-badge os-badge--neutral">Second scholarship</span>
+              <span className="partner-card__id">
+                <img src="/embodiedrecovery.svg" alt="Embodied Recovery" className="partner-card__logo" />
+              </span>
+              <p>
+                Outpatient mental health and addiction treatment in Campbell, California, integrating
+                psychological, biological, social, and spiritual elements of care.
+              </p>
+              <span className="partner-card__cta">
+                embodiedrecovery.com <Icon name="external-link" size={14} />
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
